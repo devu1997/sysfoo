@@ -27,7 +27,7 @@ pipeline {
       }
     }
 
-    stage('parallel') {
+    stage('generate-artifact') {
       failFast true
       parallel {
         stage('package') {
